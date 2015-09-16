@@ -1,0 +1,34 @@
+
+$white: #fff;
+$black: #000000;
+$blue: #5e9ac2;
+$gray: #6c6c6c;
+$cold: #BCF7F5;
+$red: #F57440;
+
+$fonts: ("Avenir", "Helvetica");
+
+body {
+    background: $blue;
+	margin: 0px;
+	padding: 0px;
+	font-family: $fonts;
+}
+
+.content{
+	background-color:$white;
+	margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.btn{
+	background-color: $blue;
+	display: inline;
+	margin: 5px;
+	padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

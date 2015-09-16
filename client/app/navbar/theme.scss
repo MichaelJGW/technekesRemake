@@ -1,0 +1,62 @@
+
+/*Navbar*/
+.logo{
+	position: absolute;
+	top: 15px;
+    left: 20px;
+	height: 200px;
+	width: 200px;
+}
+.navbarTitle{
+	color: $black;
+	background-color : #5e9ac2;
+	height: 150px;
+}
+.navbarTitle .inner{
+    position: relative;
+    left: 244px;
+    top: 56px;
+    font-size: 70px;
+}
+.navbarTitle .inner span{
+    color: $cold;
+}
+.navbarLinks{
+	background-color : $white;
+	height: 50px;
+	padding-left: 240px;
+    line-height: 50px;
+    border: 0px solid $black;
+    border-bottom-width: 15px;
+}
+.navbarLinks a{
+    color:$black;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    transition:background-color 0.15s;
+}
+.navbarLinks a:hover{
+    background-color: $blue;
+}
+
+.navbar-brand img{
+    width: 300px;
+    position: relative;
+    top: -60px;
+}
+.navbar-expanded-navbar ul li{
+    margin: 0px;
+    padding: 0px;
+
+}
+.navbar-expanded-navbar ul li a{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+}

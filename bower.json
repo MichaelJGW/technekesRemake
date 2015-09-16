@@ -1,0 +1,22 @@
+{
+  "name": "makingRandom",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "ThornWinters <MichaelJWarner@hotmail.com>"
+  ],
+  "description": "bower for technekes remake",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5"
+  }
+}
