@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 		watch: {
 			app: {
 				files: ['client/*.*','client/app/*', 'client/app/**/*.*','**/bower_components/*'],
-				tasks: ['build']
+				tasks: ['devBuild']
 			}
 		},
 		bower_concat: {
@@ -40,6 +40,13 @@ module.exports = function(grunt) {
 					'bower_components/bootstrap/dist/css/bootstrap.css' /*bootstraps css*/
 					],
 				dest: 'client/compiled/all.scss',
+			},
+			devBuild: {
+				//client/theme.scss holds the color variables so it must come first
+				src: [
+					'client/app/*.js','client/app/**/*.js',
+					],
+				dest: 'client/compiled/app.min.js',
 			},
 		},
 		clean: {
@@ -77,10 +84,12 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('default',['run']);
 	grunt.registerTask('run',['watch']);
-	grunt.registerTask('cleanBuild', ['clean:oldSet', 'build'])
-	grunt.registerTask('build',['debug','uglify','clean:uglify']);
-	grunt.registerTask('debug',['copy','concat','sass']);
-	grunt.registerTask('all',['clean:oldSet','bower_concat','build','watch']);
+	grunt.registerTask('cleanBuild', ['clean:oldSet', 'proBuild'])
+	grunt.registerTask('proBuild',['debug','uglify','clean:uglify']);
+	grunt.registerTask('devBuild',['debug','concat:devBuild','clean:uglify']);
+	grunt.registerTask('debug',['copy','concat:sass','sass']);
+	grunt.registerTask('compile',['clean:oldSet','bower_concat','proBuild']);
+	grunt.registerTask('all',['compile','watch']);
 
 	require('load-grunt-tasks')(grunt);
 }

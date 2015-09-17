@@ -1,10 +1,82 @@
 
+.homeTemplate{
+}
+.homeTemplate .templateContainer{
+	position: absolute;
+}
+.homeTemplate .templateContainer img{
+	position: relative;
+	text-align: center;
+    width: 100%;
+}
+.homeTemplate .position1 div{
+    font-weight: lighter;
+    font-size: 28px;
+    width: 465px;
+    border-radius: 3px;
+    top: 40%;
+    text-align: center;
+}
 
-.content{
-	background-color:$white;
-	margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 2px;
-    padding: 10px;
+.homeTemp-position1{
+	display: block;
+	background-image: url("./../media/img/Fotolia_57325018_Subscription_Monthly_XL.jpg");
+	background-position: center , center;
+  	background-repeat: no-repeat;
+	background-size: 100%;
+	min-width: 390px;
+	min-height: 500px;
+	height: 78%;
+	width: 100%;
+}
+.homeTemp-position1 .paragraphTitle{
+	font-size: 30px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+.homeTemp-position1 .paragraphBody{
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.homeTemplate .position2{
+
+}
+@media screen and (max-width: 768px){
+
+	.homeTemp-position1{
+		min-height: 300px;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 615px){
+
+	.homeTemp-position1{
+		min-height: 300px;
+		width: 100%;
+	}
+
+}
+
+.homeTemp-aboutUs{
+	background-color: $black;
+	color: $white;
+}
+.homeTemp-aboutUs div{
+	margin-top: 10px;
+}
+.homeTemp-aboutUs div img{
+	width: 100%;
+}
+.homeTemp-aboutUs .paragraphBody h1{
+	font-size: 18px !important;
+	margin-top: 0px !important;
+	color: $blue;
+}
+.homeTemp-aboutUs .paragraphBody div span{
+	color: $blue;
 }

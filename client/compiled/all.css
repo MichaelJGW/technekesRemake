@@ -1,11 +1,11 @@
 body {
-  background: #5e9ac2;
+  background: #FFFFFF !important;
   margin: 0px;
   padding: 0px;
   font-family: "Avenir", "Helvetica"; }
 
 .content {
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
@@ -13,12 +13,25 @@ body {
   padding: 10px; }
 
 .btn {
-  background-color: #5e9ac2;
+  background-color: #39CDFE;
   display: inline;
   margin: 5px;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px; }
+
+.navbar {
+  border-radius: 0px !important;
+  background: #FFFFFF !important; }
+
+.panel {
+  border-width: 0px !important;
+  margin-bottom: 0px !important;
+  padding-top: 20px !important; }
+
+.panel-body {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
 
 .numberContainer {
   margin: 30px;
@@ -38,75 +51,155 @@ body {
 
 .numberContainer .resultsContainer {
   width: 75%;
-  background-color: #5e9ac2; }
+  background-color: #39CDFE; }
 
-.content {
-  background-color: #fff;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border-radius: 2px;
-  padding: 10px; }
+.homeTemplate .templateContainer {
+  position: absolute; }
+
+.homeTemplate .templateContainer img {
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+.homeTemplate .position1 div {
+  font-weight: lighter;
+  font-size: 28px;
+  width: 465px;
+  border-radius: 3px;
+  top: 40%;
+  text-align: center; }
+
+.homeTemp-position1 {
+  display: block;
+  background-image: url("./../media/img/Fotolia_57325018_Subscription_Monthly_XL.jpg");
+  background-position: center , center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: 390px;
+  min-height: 500px;
+  height: 78%;
+  width: 100%; }
+
+.homeTemp-position1 .paragraphTitle {
+  font-size: 30px;
+  font-weight: lighter;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%; }
+
+.homeTemp-position1 .paragraphBody {
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 10px;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .homeTemp-position1 {
+    min-height: 300px;
+    width: 100%; } }
+@media screen and (max-width: 615px) {
+  .homeTemp-position1 {
+    min-height: 300px;
+    width: 100%; } }
+.homeTemp-aboutUs {
+  background-color: #222222;
+  color: #FFFFFF; }
+
+.homeTemp-aboutUs div {
+  margin-top: 10px; }
+
+.homeTemp-aboutUs div img {
+  width: 100%; }
+
+.homeTemp-aboutUs .paragraphBody h1 {
+  font-size: 18px !important;
+  margin-top: 0px !important;
+  color: #39CDFE; }
+
+.homeTemp-aboutUs .paragraphBody div span {
+  color: #39CDFE; }
 
 /*Navbar*/
-.logo {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  height: 200px;
-  width: 200px; }
-
-.navbarTitle {
-  color: #000000;
-  background-color: #5e9ac2;
-  height: 150px; }
-
-.navbarTitle .inner {
-  position: relative;
-  left: 244px;
-  top: 56px;
-  font-size: 70px; }
-
-.navbarTitle .inner span {
-  color: #BCF7F5; }
-
-.navbarLinks {
-  background-color: #fff;
-  height: 50px;
-  padding-left: 240px;
-  line-height: 50px;
-  border: 0px solid #000000;
-  border-bottom-width: 15px; }
-
-.navbarLinks a {
-  color: #000000;
-  text-align: center;
-  text-decoration: none;
-  margin-left: 7px;
-  margin-right: 7px;
-  padding-left: 3px;
-  padding-right: 3px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  transition: background-color 0.15s; }
-
-.navbarLinks a:hover {
-  background-color: #5e9ac2; }
-
 .navbar-brand img {
-  width: 300px;
-  position: relative;
-  top: -60px; }
+  width: 300px; }
 
 .navbar-expanded-navbar ul li {
   margin: 0px;
-  padding: 0px; }
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  transition: 0.3s;
+  height: 100%; }
+
+.navbar-expanded-navbar ul li:hover {
+  background: #D4D4D4;
+  opacity: 0.95; }
 
 .navbar-expanded-navbar ul li a {
   margin: 0px;
   padding: 0px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  padding-right: 15px; }
 
+.navbar-expanded-navbar ul li:hover a {
+  color: #222222 !important; }
+
+/*changing bootstrap a bit*/
+.navbar-text {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important; }
+
+.navbar-brand {
+  height: 65px !important; }
+
+.navbar-toggle:focus {
+  background: transparent !important; }
+
+.navbar-toggle {
+  margin-top: 18px !important;
+  transition: 0.5s; }
+
+.navbar-toggle:hover {
+  background: transparent !important; }
+
+.navbar-toggle .icon-bar {
+  transition: 0.3s;
+  position: relative; }
+
+/*The 3 brs turnning into an X*/
+.navbar-toggle:hover .icon-bar1 {
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  top: 6px; }
+
+.navbar-toggle:hover .icon-bar2 {
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg); }
+
+.navbar-toggle:hover .icon-bar3 {
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+  top: -6px; }
+
+.navbar-default .navbar-toggle {
+  border-width: 0px; }
+
+.navbar-buffer {
+  padding-top: 60px; }
+
+@media screen and (max-width: 386px) {
+  .navbar-buffer {
+    padding-top: 120px; } }
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.

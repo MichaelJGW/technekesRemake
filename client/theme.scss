@@ -1,15 +1,16 @@
 
-$white: #fff;
-$black: #000000;
-$blue: #5e9ac2;
-$gray: #6c6c6c;
+$white: #FFFFFF;
+$black: #222222;
+$blue: #39CDFE;
+$gray: #6C6C6C;
+$light-gray: #D4D4D4;
 $cold: #BCF7F5;
 $red: #F57440;
 
 $fonts: ("Avenir", "Helvetica");
 
 body {
-    background: $blue;
+    background: $white !important;
 	margin: 0px;
 	padding: 0px;
 	font-family: $fonts;
@@ -31,4 +32,19 @@ body {
 	padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.navbar {
+    border-radius: 0px !important;
+    background: $white !important;
+}
+
+.panel {
+	border-width: 0px !important;
+	margin-bottom: 0px !important;
+	padding-top: 20px !important; 
+}
+.panel-body{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
