@@ -1,19 +1,7 @@
 
 <div class='homeTemplate'>
-<div class='panel panel-default'>
-	<div class="panel-body 	homeTemp-position1">
-		<!--
-		<img src="http://www.businessownerssuccessclub.com/wp-content/uploads/2015/05/womenworkingtogether.jpeg"/>
-		-->
-		<div class='col-xs-6'>
-		<div class='col-xs-12 paragraphTitle'>Let's Create Demand</div>
 
-		<div class='col-xs-12 paragraphBody'>
-			Your well-oiled, data-driven, multi-channel marketing and demand creation machine. That's us.
-		</div>
-		</div>
-	</div>
-</div>
+<div ng-include="'compiled/app/components/banner/template.html'"></div>
 
 <div class='panel panel-default'>
 	<div class="panel-body 	homeTemp-position  homeTemp-aboutUs">
@@ -23,14 +11,26 @@
 
 		<div class= 'col-xs-12 col-md-6 paragraphBody'>
 			<h1>
-			Bridging the gap between sales and marketing to bring buyers and
-			sellers together.
+				{{this.summaryTitle}}
 			</h1>
-			Technekes provides a single point of integration for data and marketing services to drive B2B sales for agriculture, healthcare and pharmaceutical companies throughout North America.
-			Because we operate at the precise intersection of four disciplines — telemarketing, digital marketing, technology services and data services — our marketing campaigns are accurate and relevant. Our calls are timely and informed. Our leads are actionable and profitable. And we're able to treat your customers as if they were our own.
-			For the sake of simplicity, we like to say that we create sales, create insights, create payments, and create relationships. But long story short, we "Create Demand."
-			We do it exceptionally well. And we'd like to do the same for you.
-			<div>Sound good? <span>Let's talk.</span></div>
+			{{this.summaryBody}}
 		</div>
 	</div>
 </div>
+
+<div class='panel panel-default'>
+	<div class="panel-body 	homeTemp-position homeTemp-Core">
+		<div class='col-xs-12 col-md-4 core-element' ng-repeat="obj in this.coreInfo">
+			<div class='core-container'>
+				<div class='core-title title1'>
+					<a href="{{obj.link}}">{{obj.title}}</a>
+				</div>
+				<div class='core-body'>
+					{{obj.body}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,65 @@
+.component-banner div{
+    font-weight: 200;
+    font-size: xx-large;
+    border-radius: 3px;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 10%;
+    transition: 2s background-color 2s background-size;
+}
+
+.component-banner{
+	display: block;
+	background-position: center , center;
+  	background-repeat: no-repeat;
+	background-size: 100%;
+    background-size:cover;
+	min-height: 500px;
+	height: 100%;
+	width: 100%;
+    padding: 0px !important;
+}
+.component-banner .paragraphTitle{
+    margin-top: 10%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+.component-banner .paragraphBody{
+
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+@media screen and (max-width: 768px){
+
+    .component-banner{
+        min-height: 300px;
+        width: 100%;
+    }
+    .component-banner .paragraphTitle{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 615px){
+
+    .component-banner{
+        min-height: 300px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+
+    .component-banner:nth-child(1){
+        background-color: rgba(255,255,255,0.3);
+        font-size: x-large;
+    }
+    .component-banner .paragraphBody{
+        font-size: medium;
+    }
+}

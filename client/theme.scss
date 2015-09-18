@@ -2,6 +2,7 @@
 $white: #FFFFFF;
 $black: #222222;
 $blue: #39CDFE;
+$blue-dark: #168BB1;
 $gray: #6C6C6C;
 $light-gray: #D4D4D4;
 $cold: #BCF7F5;
@@ -42,9 +43,45 @@ body {
 .panel {
 	border-width: 0px !important;
 	margin-bottom: 0px !important;
-	padding-top: 20px !important; 
+	padding-top: 0px !important; 
+	padding-bottom: 0px !important; 
 }
 .panel-body{
 	padding-left: 0px !important;
 	padding-right: 0px !important;
+}
+.title1{
+	width: 100%;
+    font-size: xx-large;
+    font-weight: 200;
+    text-align: center;
+    border: 0px solid $blue;
+    border-bottom-width: 3px;
+}
+
+/*changing bootstrap a bit*/
+a{
+    color: $black !important;
+}
+.navbar-text {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.navbar-brand {
+    height: 65px !important;
+}
+.navbar-toggle:focus {
+    background: rgba(0,0,0,0) !important;
+}
+.navbar-toggle{
+    margin-top: 18px !important;
+    transition: 0.5s;
+}
+.navbar-toggle:hover {
+    background: rgba(0,0,0,0) !important;
+}
+.navbar-toggle .icon-bar{
+    transition: 0.3s;
+    position: relative;
 }

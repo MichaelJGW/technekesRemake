@@ -14,20 +14,8 @@
 	    </div>
 	    <div class="collapse navbar-collapse navbar-text navbar-right navbar-expanded-navbar" id="navbar-collapse-1">
 	      	<ul class="nav navbar-nav">
-				<li>
-					<a href="#/work">Work</a>
-				</li>
-				<li>
-					<a href="#/people">People</a>
-				</li>
-				<li>
-					<a href="#/blog">Blog</a>
-				</li>
-				<li>
-					<a href="#/culture">Culture</a>
-				</li>
-				<li>
-					<a href="#/careers">Careers</a>
+				<li ng-repeat=" link in this.links">
+					<a href="{{link.href}}">{{link.name}}</a>
 				</li>
 	        </ul>
         </div>

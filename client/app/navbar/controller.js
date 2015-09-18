@@ -4,8 +4,25 @@ angular
 	.controller('navbarCtrl', ['$scope', function($scope){
 		$scope.links = [
 			{
-				name: 'About',
-				href: ''
-			}
+				name: 'Work',
+				href: '#/work'
+			},
+			{
+				name: 'People',
+				href: '#/people'
+			},
+			{
+				name: 'Blog',
+				href: '#/blog'
+			},
+			{
+				name: 'Culture',
+				href: '#/culture'
+			},
+			{
+				name: 'Careers',
+				href: '#/careers'
+			},
+
 		];
 	}]);

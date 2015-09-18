@@ -27,125 +27,25 @@ body {
 .panel {
   border-width: 0px !important;
   margin-bottom: 0px !important;
-  padding-top: 20px !important; }
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; }
 
 .panel-body {
   padding-left: 0px !important;
   padding-right: 0px !important; }
 
-.numberContainer {
-  margin: 30px;
-  background: white; }
-
-.numberContainer .forum {
-  width: 49%; }
-
-.numberContainer .maxbtn {
-  width: 300px; }
-
-.numberContainer .minbtn {
-  width: 300px; }
-
-.numberContainer .results {
-  width: 49%; }
-
-.numberContainer .resultsContainer {
-  width: 75%;
-  background-color: #39CDFE; }
-
-.homeTemplate .templateContainer {
-  position: absolute; }
-
-.homeTemplate .templateContainer img {
-  position: relative;
-  text-align: center;
-  width: 100%; }
-
-.homeTemplate .position1 div {
-  font-weight: lighter;
-  font-size: 28px;
-  width: 465px;
-  border-radius: 3px;
-  top: 40%;
-  text-align: center; }
-
-.homeTemp-position1 {
-  display: block;
-  background-image: url("./../media/img/Fotolia_57325018_Subscription_Monthly_XL.jpg");
-  background-position: center , center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  min-width: 390px;
-  min-height: 500px;
-  height: 78%;
-  width: 100%; }
-
-.homeTemp-position1 .paragraphTitle {
-  font-size: 30px;
-  font-weight: lighter;
+.title1 {
   width: 100%;
+  font-size: xx-large;
+  font-weight: 200;
   text-align: center;
-  margin-top: 10%; }
-
-.homeTemp-position1 .paragraphBody {
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-top: 10px;
-  text-align: center; }
-
-@media screen and (max-width: 768px) {
-  .homeTemp-position1 {
-    min-height: 300px;
-    width: 100%; } }
-@media screen and (max-width: 615px) {
-  .homeTemp-position1 {
-    min-height: 300px;
-    width: 100%; } }
-.homeTemp-aboutUs {
-  background-color: #222222;
-  color: #FFFFFF; }
-
-.homeTemp-aboutUs div {
-  margin-top: 10px; }
-
-.homeTemp-aboutUs div img {
-  width: 100%; }
-
-.homeTemp-aboutUs .paragraphBody h1 {
-  font-size: 18px !important;
-  margin-top: 0px !important;
-  color: #39CDFE; }
-
-.homeTemp-aboutUs .paragraphBody div span {
-  color: #39CDFE; }
-
-/*Navbar*/
-.navbar-brand img {
-  width: 300px; }
-
-.navbar-expanded-navbar ul li {
-  margin: 0px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 23px;
-  padding-bottom: 22px;
-  transition: 0.3s;
-  height: 100%; }
-
-.navbar-expanded-navbar ul li:hover {
-  background: #D4D4D4;
-  opacity: 0.95; }
-
-.navbar-expanded-navbar ul li a {
-  margin: 0px;
-  padding: 0px;
-  padding-left: 15px;
-  padding-right: 15px; }
-
-.navbar-expanded-navbar ul li:hover a {
-  color: #222222 !important; }
+  border: 0px solid #39CDFE;
+  border-bottom-width: 3px; }
 
 /*changing bootstrap a bit*/
+a {
+  color: #222222 !important; }
+
 .navbar-text {
   margin-top: 0px !important;
   margin-bottom: 0px !important; }
@@ -166,6 +66,141 @@ body {
 .navbar-toggle .icon-bar {
   transition: 0.3s;
   position: relative; }
+
+.component-banner div {
+  font-weight: 200;
+  font-size: xx-large;
+  border-radius: 3px;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 10%;
+  transition: 2s background-color 2s background-size; }
+
+.component-banner {
+  display: block;
+  background-position: center , center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+  padding: 0px !important; }
+
+.component-banner .paragraphTitle {
+  margin-top: 10%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 15px; }
+
+.component-banner .paragraphBody {
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 10px;
+  text-align: center;
+  font-size: large; }
+
+@media screen and (max-width: 768px) {
+  .component-banner {
+    min-height: 300px;
+    width: 100%; }
+
+  .component-banner .paragraphTitle {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px; } }
+@media screen and (max-width: 615px) {
+  .component-banner {
+    min-height: 300px;
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  .component-banner:nth-child(1) {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: x-large; }
+
+  .component-banner .paragraphBody {
+    font-size: medium; } }
+.homeTemplate .templateContainer {
+  position: absolute; }
+
+.homeTemplate .templateContainer img {
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+.homeTemp-aboutUs {
+  background-color: #222222;
+  color: #FFFFFF; }
+
+.homeTemp-aboutUs div {
+  margin-top: 10px; }
+
+.homeTemp-aboutUs div img {
+  width: 100%; }
+
+.homeTemp-aboutUs .paragraphBody h1 {
+  font-size: 18px !important;
+  margin-top: 0px !important;
+  color: #39CDFE; }
+
+.homeTemp-aboutUs .paragraphBody div span {
+  color: #39CDFE; }
+
+.homeTemp-Core {
+  padding-left: 15px !important;
+  background-color: #222222; }
+
+.homeTemp-Core .core-element {
+  margin-bottom: 15px;
+  padding-right: 15px !important;
+  padding-left: 0px !important;
+  height: 100%; }
+
+.homeTemp-Core .core-element .core-container {
+  background: #FFFFFF !important;
+  color: #222222;
+  height: 100%;
+  padding: 15px; }
+
+.homeTemp-Core .core-element .core-container .core-title {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 15px; }
+
+.homeTemp-Core .core-element .core-container .core-title a {
+  text-decoration: none !important; }
+
+.homeTemp-Core .core-element .core-container .core-body {
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/*Navbar*/
+.navbar-brand img {
+  width: 300px; }
+
+.navbar-expanded-navbar ul li {
+  margin: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  transition: 0.3s;
+  height: 100%; }
+
+.navbar-expanded-navbar ul li:hover {
+  background: #222222;
+  opacity: 0.95; }
+
+.navbar-expanded-navbar ul li a {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-width: 1px; }
+
+.navbar-expanded-navbar ul li:hover a {
+  color: #39CDFE !important; }
 
 /*The 3 brs turnning into an X*/
 .navbar-toggle:hover .icon-bar1 {

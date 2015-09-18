@@ -9,58 +9,6 @@
 	text-align: center;
     width: 100%;
 }
-.homeTemplate .position1 div{
-    font-weight: lighter;
-    font-size: 28px;
-    width: 465px;
-    border-radius: 3px;
-    top: 40%;
-    text-align: center;
-}
-
-.homeTemp-position1{
-	display: block;
-	background-image: url("./../media/img/Fotolia_57325018_Subscription_Monthly_XL.jpg");
-	background-position: center , center;
-  	background-repeat: no-repeat;
-	background-size: 100%;
-	min-width: 390px;
-	min-height: 500px;
-	height: 78%;
-	width: 100%;
-}
-.homeTemp-position1 .paragraphTitle{
-	font-size: 30px;
-    font-weight: lighter;
-    width: 100%;
-    text-align: center;
-    margin-top: 10%;
-}
-.homeTemp-position1 .paragraphBody{
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-top: 10px;
-    text-align: center;
-}
-
-.homeTemplate .position2{
-
-}
-@media screen and (max-width: 768px){
-
-	.homeTemp-position1{
-		min-height: 300px;
-		width: 100%;
-	}
-}
-@media screen and (max-width: 615px){
-
-	.homeTemp-position1{
-		min-height: 300px;
-		width: 100%;
-	}
-
-}
 
 .homeTemp-aboutUs{
 	background-color: $black;
@@ -79,4 +27,36 @@
 }
 .homeTemp-aboutUs .paragraphBody div span{
 	color: $blue;
+}
+
+.homeTemp-Core{
+	padding-left: 15px !important;
+	background-color: $black;
+}
+.homeTemp-Core .core-element{
+	margin-bottom: 15px;
+	padding-right: 15px !important;
+	padding-left: 0px !important; 
+	height: 100%;
+}
+
+.homeTemp-Core .core-element .core-container{
+	background: $white !important;
+	color: $black;
+	height: 100%;
+	padding: 15px;
+}
+
+.homeTemp-Core .core-element .core-container .core-title{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+.homeTemp-Core .core-element .core-container .core-title a{
+	text-decoration: none !important;
+}
+.homeTemp-Core .core-element .core-container .core-body{
+	width: 100%;
+	padding-left: 5px;
+    padding-right: 5px;
 }

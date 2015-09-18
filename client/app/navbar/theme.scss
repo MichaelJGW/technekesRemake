@@ -14,7 +14,7 @@
     height: 100%;
 }
 .navbar-expanded-navbar ul li:hover{
-    background: $light-gray;
+    background: $black;
     opacity: 0.95;
 }
 .navbar-expanded-navbar ul li a{
@@ -22,34 +22,10 @@
     padding: 0px;
     padding-left: 15px;
     padding-right: 15px;
-
+    border-width: 1px;
 }
 .navbar-expanded-navbar ul li:hover a{
-    color: $black !important;
-}
-/*changing bootstrap a bit*/
-
-.navbar-text {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-}
-
-.navbar-brand {
-    height: 65px !important;
-}
-.navbar-toggle:focus {
-    background: rgba(0,0,0,0) !important;
-}
-.navbar-toggle{
-    margin-top: 18px !important;
-    transition: 0.5s;
-}
-.navbar-toggle:hover {
-    background: rgba(0,0,0,0) !important;
-}
-.navbar-toggle .icon-bar{
-    transition: 0.3s;
-    position: relative;
+    color: $blue !important;
 }
 
 /*The 3 brs turnning into an X*/
