@@ -2,7 +2,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
 	    <div class="navbar-header">
-	    	<a class="navbar-brand" href="#/">
+	    	<a class="navbar-brand" href="#/" ng-click="this.clicked(-1)">
 	    		<img  alt="Technekes" src='media/img/logo/TechnekesHorizontal.png'/>
 	    	</a>
 	    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -14,7 +14,7 @@
 	    </div>
 	    <div class="collapse navbar-collapse navbar-text navbar-right navbar-expanded-navbar" id="navbar-collapse-1">
 	      	<ul class="nav navbar-nav">
-				<li ng-repeat=" link in this.links">
+				<li ng-repeat=" link in this.links" ng-click="this.clicked(link.id)" class='{{this.getActiveClass(link.id)}}'>
 					<a href="{{link.href}}">{{link.name}}</a>
 				</li>
 	        </ul>

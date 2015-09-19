@@ -1,4 +1,4 @@
-.component-banner div{
+.component-banner-container{
     font-weight: 200;
     font-size: xx-large;
     border-radius: 3px;
@@ -6,6 +6,7 @@
     text-align: center;
     padding-bottom: 10%;
     transition: 2s background-color 2s background-size;
+    min-height: 500px;
 }
 
 .component-banner{
@@ -15,15 +16,14 @@
 	background-size: 100%;
     background-size:cover;
 	min-height: 500px;
-	height: 100%;
+	height: 200px;
 	width: 100%;
     padding: 0px !important;
+
 }
 .component-banner .paragraphTitle{
-    margin-top: 10%;
-    padding-top: 25px;
+    padding-top: 10%;
     padding-bottom: 25px;
-    margin-bottom: 15px;
 }
 .component-banner .paragraphBody{
 
@@ -32,6 +32,7 @@
     padding-top: 10px;
     text-align: center;
     font-size: large;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 768px){
@@ -52,11 +53,14 @@
         min-height: 300px;
         width: 100%;
     }
+    .component-banner-container{
+        min-height: 300px;
+    }
 }
 @media screen and (max-width: 500px){
 
     .component-banner:nth-child(1){
-        background-color: rgba(255,255,255,0.3);
+        /*background-color: rgba(255,255,255,0.3);*/
         font-size: x-large;
     }
     .component-banner .paragraphBody{
