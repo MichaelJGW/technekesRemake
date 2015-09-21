@@ -16,7 +16,7 @@
 	background-size: 100%;
     background-size:cover;
 	min-height: 500px;
-	height: 200px;
+	height: 300px;
 	width: 100%;
     padding: 0px !important;
 
@@ -50,11 +50,11 @@
 @media screen and (max-width: 615px){
 
     .component-banner{
-        min-height: 300px;
+        min-height: 450px;
         width: 100%;
     }
     .component-banner-container{
-        min-height: 300px;
+        min-height: 450px;
     }
 }
 @media screen and (max-width: 500px){

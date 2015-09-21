@@ -84,7 +84,7 @@ a {
   background-size: 100%;
   background-size: cover;
   min-height: 500px;
-  height: 200px;
+  height: 300px;
   width: 100%;
   padding: 0px !important; }
 
@@ -111,11 +111,11 @@ a {
     margin-bottom: 0px; } }
 @media screen and (max-width: 615px) {
   .component-banner {
-    min-height: 300px;
+    min-height: 450px;
     width: 100%; }
 
   .component-banner-container {
-    min-height: 300px; } }
+    min-height: 450px; } }
 @media screen and (max-width: 500px) {
   .component-banner:nth-child(1) {
     /*background-color: rgba(255,255,255,0.3);*/
