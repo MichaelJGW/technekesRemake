@@ -208,7 +208,7 @@ a {
   color: #39CDFE !important; }
 
 /*The 3 brs turnning into an X*/
-.navbar-toggle:hover .icon-bar1 {
+.navbar-hamburger-button-open-top {
   -ms-transform: rotate(45deg);
   /* IE 9 */
   -webkit-transform: rotate(45deg);
@@ -216,14 +216,14 @@ a {
   transform: rotate(45deg);
   top: 6px; }
 
-.navbar-toggle:hover .icon-bar2 {
+.navbar-hamburger-button-open-mid {
   -ms-transform: rotate(45deg);
   /* IE 9 */
   -webkit-transform: rotate(45deg);
   /* Chrome, Safari, Opera */
   transform: rotate(45deg); }
 
-.navbar-toggle:hover .icon-bar3 {
+.navbar-hamburger-button-open-bottom {
   -ms-transform: rotate(-45deg);
   /* IE 9 */
   -webkit-transform: rotate(-45deg);
