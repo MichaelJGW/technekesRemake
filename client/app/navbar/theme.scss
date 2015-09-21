@@ -53,7 +53,10 @@
     padding-top: 60px;
 }
 @media screen and (max-width: 386px){
-    .navbar-buffer{
-        padding-top: 120px;
+    .navbar-brand:first-child{
+        width: calc(100% - 60px);
+    }
+    .navbar-brand img{
+        width: 100%;
     }
 }
